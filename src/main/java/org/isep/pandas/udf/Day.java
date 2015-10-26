@@ -7,11 +7,15 @@ import org.joda.time.format.DateTimeFormat;
 
 public class Day extends UDF {
 
+	/**
+	 * Take Text pam with Datetime format and
+	 * return Text with a Date Format.
+	 * @param dateTime
+	 * @return
+	 */
 	public Text evaluate(Text dateTime){
 		DateTime dtt = Bamboo.dateParse(dateTime.toString());
 		if (dtt == null ) return new Text("NULL");
-		//String d = dtt.getYear() + "_day-" + dtt.getDayOfYear();
-		String d = dtt.toString("yyyy-MM-dd");
-		return new Text(d);
+		return new Text(dtt.toString("yyyy-MM-dd"));
 	}
 }
