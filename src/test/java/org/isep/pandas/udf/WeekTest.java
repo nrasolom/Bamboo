@@ -16,14 +16,14 @@ public class WeekTest {
 	public void regularTest(){
 		// regular case -> 
 		Text weekno = w.evaluate(new Text("2012-01-04 17:30:12"));
-		assertEquals("2012_week-1", weekno.toString());
+		assertEquals("2012 / week:1", weekno.toString());
 	}
 	
 	@Test
 	public void multiYearTest(){
 		// limit case -> GROUP BY works fine for different years
 		Text weekno = w.evaluate(new Text("2015-02-07 12:51:12"));
-		assertEquals("2015_week-6", weekno.toString());
+		assertEquals("2015 / week:6", weekno.toString());
 	}
 	
 	@Test
@@ -40,31 +40,31 @@ public class WeekTest {
 	public void lastDayTest(){
 		// limit case -> last day of the week 
 		Text weekno = w.evaluate(new Text("2012-01-07 21:47:08"));
-		assertEquals("2012_week-1", weekno.toString());
+		assertEquals("2012 / week:1", weekno.toString());
 	}
 	
 	@Test
 	public void veryVeryLast(){
 		// limit case -> the very very last day of the year
 		Text weekno = w.evaluate(new Text("2011-12-31 01:05:00"));
-		assertEquals("2011_week-52", weekno.toString());
+		assertEquals("2011 / week:52", weekno.toString());
 	}
 	
 	@Test
 	public void veryVeryFirst(){
 		// limit case -> the very very first day of the year
 		Text weekno1 = w.evaluate(new Text("2014-01-01 00:00:00"));
-		assertEquals("2014_week-1", weekno1.toString());
+		assertEquals("2014 / week:1", weekno1.toString());
 				
 		// In the definition of the FIRST week it has to contain 
 		// at least 4 days or it belongs to the last year and return 52
 		Text weekno2 = w.evaluate(new Text("2012-01-01 00:05:00"));
-		assertEquals("2011_week-52", weekno2.toString());
+		assertEquals("2011 / week:52", weekno2.toString());
 		
 		// In the definition of the LAST week it has to contain 
 		// at least 4 days or it belongs to the next year and return 1 instead of 52
 		Text weekno3 = w.evaluate(new Text("2014-12-31 07:35:00"));
-		assertEquals("2015_week-1", weekno3.toString());
+		assertEquals("2015 / week:1", weekno3.toString());
 	}
 	
 	@Test

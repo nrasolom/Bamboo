@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.io.FloatWritable;
-import org.apache.hadoop.io.IntWritable;
 
 
 public class ArraySum extends UDF {
