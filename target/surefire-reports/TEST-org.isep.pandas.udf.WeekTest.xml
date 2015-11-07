@@ -1,72 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="org.isep.pandas.udf.WeekTest" time="0.002" errors="0" skipped="0">
+<testsuite failures="0" time="0.007" errors="0" skipped="0" tests="7" name="org.isep.pandas.udf.WeekTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.31-b07"/>
-    <property name="gopherProxySet" value="false"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
+    <property name="java.vm.version" value="24.80-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Romain\workspace\Bamboo\Bamboo"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/LoicMDIVAD/Documents/workspace/java/Bamboo"/>
-    <property name="java.runtime.version" value="1.8.0_31-b13"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/4m/mp43gbyd6wd26gpsh85yfrnc0000gn/T/"/>
+    <property name="user.dir" value="C:\Users\Romain\workspace\Bamboo\Bamboo"/>
+    <property name="java.runtime.version" value="1.7.0_80-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Romain\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/LoicMDIVAD/Documents/workspace/java/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2057561435606834231.tmp"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/LoicMDIVAD/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Users\Romain\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7371282603251378060.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.11"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/LoicMDIVAD"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Romain"/>
     <property name="user.timezone" value="Europe/Paris"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="LoicMDIVAD"/>
-    <property name="java.class.path" value="/Applications/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Romain"/>
+    <property name="java.class.path" value="/C:/Users/Romain/eclipse/jee-mars/eclipse/../../../.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jre7"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_31"/>
-    <property name="java.ext.dirs" value="/Users/LoicMDIVAD/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.7.0_80"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/LoicMDIVAD/Documents/workspace/java/Bamboo/EMBEDDED"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="C:\Users\Romain\workspace\Bamboo\Bamboo\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="veryVeryLast" time="0"/>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="lastDayTest" time="0"/>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="regularTest" time="0"/>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="veryVeryFirst" time="0.001"/>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="badFormatTest" time="0.001"/>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="test" time="0"/>
-  <testcase classname="org.isep.pandas.udf.WeekTest" name="multiYearTest" time="0"/>
+  <testcase time="0.002" classname="org.isep.pandas.udf.WeekTest" name="veryVeryLast"/>
+  <testcase time="0.001" classname="org.isep.pandas.udf.WeekTest" name="lastDayTest"/>
+  <testcase time="0.001" classname="org.isep.pandas.udf.WeekTest" name="regularTest"/>
+  <testcase time="0.001" classname="org.isep.pandas.udf.WeekTest" name="veryVeryFirst"/>
+  <testcase time="0.002" classname="org.isep.pandas.udf.WeekTest" name="badFormatTest"/>
+  <testcase time="0" classname="org.isep.pandas.udf.WeekTest" name="test"/>
+  <testcase time="0" classname="org.isep.pandas.udf.WeekTest" name="multiYearTest"/>
 </testsuite>

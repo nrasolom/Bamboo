@@ -58,4 +58,13 @@ public class SeasonTest {
 		assertEquals("AUTUMN", s.evaluate(datetimes[1]).toString());
 		assertEquals("WINTER", s.evaluate(datetimes[2]).toString());
 	}
+	
+	@Test
+	public void testDate(){
+		String[] dates = {"2012-09-01", "2012-10-20", "2012-12-01"};
+		Text[] datetimes = this.makeDates(dates);
+		assertEquals("AUTUMN", s.evaluate(datetimes[0]).toString());
+		assertEquals("AUTUMN", s.evaluate(datetimes[1]).toString());
+		assertEquals("WINTER", s.evaluate(datetimes[2]).toString());
+	}
 }
