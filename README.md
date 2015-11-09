@@ -1,5 +1,5 @@
 # Bamboo
-###### By The team Pandas 
+###### By The team Pandas
 ![Pandas Corp. Logo](https://dl.dropboxusercontent.com/s/e57l5e47rqtq39q/PandasCorp_githubbanner.png?dl=0)
 
 This is a part of the ISEP'15 Bigdata project.
@@ -14,7 +14,7 @@ You need the following tools to work on this project
   * dependencies: hive-exec 0.13.1
   * dependencies: junit 4.11
   * dependencies: joda-time 2.7
-* Apache Hive 
+* Apache Hive
 
 Installation
 ------------
@@ -25,6 +25,13 @@ Installation
 4. load the `.jar` in hue
 
 Tools: for this project the team use hue3 (See [hue](https://github.com/cloudera/hue/blob/master/README.md) repo)
+
+Goal
+------------
+The main goal of the project is design queries able to retrieve the Load Curve.
+
+>A Load Curve is a time series of electricity consumption. This project refer to it by "LD".
+
 
 Usage
 ------------
@@ -37,21 +44,18 @@ ORDER BY datetime;
 
 Design
 ------------
-Here is an exemple of work table build for the queries. Tables are filled with the [EnerNOC](http://www.enernoc.com) open dataset. Find the measure over on year (2012) for one undred sites -----> [HERE]().
+Here is an exemple of work table build for the queries. Tables are filled with the [EnerNOC](http://www.enernoc.com) open dataset. Find the measure over on year (2012) for one undred sites -----> [HERE](https://open-enernoc-data.s3.amazonaws.com/anon/index.html).
 
-|	datetime: String	     |	values: Array\<float\>   |
-------------------------|--------------------------
-|2015-01-01 00:05:00	   |	\[, , , , , , , \](x100)	|
-|2015-01-01 00:10:00	   |	\[, , , , , , , \](x100)	|
-|2015-01-01 00:15:00	   |	\[, , , , , , , \](x100)	|
+datetime: String	   | industry  |	values: Array\<float\>  
+---------------------|-----------|--------------------------
+2015-01-01 00:05:00  | Education |	\[, , , , , \] (x25)
+2015-01-01 00:05:00  | Commerce  |	\[, , , , , \] (x25)
+2015-01-01 00:05:00  | Food      |	\[, , , , , \] (x25)
 
 The Team
 ------------
-Pandas Corp. members are: 
+Pandas Corp. members are:
 [@dchanthavong](https://github.com/dchanthavong),
 [@RomainPhilippe](https://github.com/RomainPhilippe),
-[@nrasolom](https://github.com/nrasolom), 
+[@nrasolom](https://github.com/nrasolom),
 [@DivLoic](https://github.com/DivLoic).
-
-
-
