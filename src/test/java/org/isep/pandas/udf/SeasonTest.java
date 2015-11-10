@@ -3,7 +3,6 @@ package org.isep.pandas.udf;
 import static org.junit.Assert.*;
 
 import org.apache.hadoop.io.Text;
-import org.joda.time.DateTime;
 import org.junit.Test;
 
 public class SeasonTest {
@@ -34,16 +33,16 @@ public class SeasonTest {
 	
 	@Test
 	public void testSpring(){
-		String[] dates = {"2012-04-01 23:59:59", "2012-05-20 14:35:00", "2012-03-17 05:50:30"};
+		String[] dates = {"2012-04-01 23:59:59", "2012-05-20 14:35:00", "2012-03-19 05:50:30"};
 		Text[] datetimes = this.makeDates(dates);
 		assertEquals("SPRING", s.evaluate(datetimes[0]).toString());
 		assertEquals("SPRING", s.evaluate(datetimes[1]).toString());
-		assertEquals("SPRING", s.evaluate(datetimes[2]).toString());
+		assertEquals("WINTER", s.evaluate(datetimes[2]).toString());
 	}
 	
 	@Test
 	public void testSummer(){
-		String[] dates = {"2012-06-01 23:59:59", "2012-07-20 14:35:00", "2012-08-17 05:50:30"};
+		String[] dates = {"2012-09-22 23:59:59", "2012-07-20 14:35:00", "2012-08-17 05:50:30"};
 		Text[] datetimes = this.makeDates(dates);
 		assertEquals("SUMMER", s.evaluate(datetimes[0]).toString());
 		assertEquals("SUMMER", s.evaluate(datetimes[1]).toString());
@@ -52,7 +51,7 @@ public class SeasonTest {
 	
 	@Test
 	public void testAutum(){
-		String[] dates = {"2012-09-01 23:59:59", "2012-10-20 14:35:00", "2012-12-01 12:00:21"};
+		String[] dates = {"2012-09-23 23:59:59", "2012-10-20 14:35:00", "2012-12-22 00:00:01"};
 		Text[] datetimes = this.makeDates(dates);
 		assertEquals("AUTUMN", s.evaluate(datetimes[0]).toString());
 		assertEquals("AUTUMN", s.evaluate(datetimes[1]).toString());
@@ -61,10 +60,10 @@ public class SeasonTest {
 	
 	@Test
 	public void testDate(){
-		String[] dates = {"2012-09-01", "2012-10-20", "2012-12-01"};
+		String[] dates = {"2012-09-01", "2012-03-20", "2012-12-01"};
 		Text[] datetimes = this.makeDates(dates);
-		assertEquals("AUTUMN", s.evaluate(datetimes[0]).toString());
-		assertEquals("AUTUMN", s.evaluate(datetimes[1]).toString());
-		assertEquals("WINTER", s.evaluate(datetimes[2]).toString());
+		assertEquals("SUMMER", s.evaluate(datetimes[0]).toString());
+		assertEquals("SPRING", s.evaluate(datetimes[1]).toString());
+		assertEquals("AUTUMN", s.evaluate(datetimes[2]).toString());
 	}
 }

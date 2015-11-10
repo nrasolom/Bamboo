@@ -1,11 +1,8 @@
 package org.isep.pandas.udf;
 
 import static org.junit.Assert.*;
-import junit.framework.Assert;
-
 import org.joda.time.DateTime;
 import org.junit.Test;
-import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.io.Text;
 
 public class WeekTest {
@@ -69,7 +66,7 @@ public class WeekTest {
 	
 	@Test
 	public void test() {
-		DateTime d = new DateTime(2012,01,01, 0, 0, 0);
+		//DateTime d = new DateTime(2012,01,01, 0, 0, 0);
 		//System.out.println(d.toString()); //2012-01-01T00:00:00.000+01:00
 		//System.out.println("Number of weeks: "+d.getWeekOfWeekyear()); // 52
 		//System.out.println("Last week belongs to: " +d.getWeekyear()); // 2011

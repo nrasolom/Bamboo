@@ -8,7 +8,7 @@ public class Bamboo {
 	
 	private static final String DATETIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 	private static final String DATE_FORMAT = "yyyy-MM-dd";
-	
+
 	/**
 	 * Util function to test if a date format is good or not
 	 * It set the to a time/zone without summer/winter time

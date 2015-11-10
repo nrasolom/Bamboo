@@ -8,7 +8,7 @@ import org.apache.hadoop.io.FloatWritable;
 import org.isep.pandas.udf.ArraySum;
 
 @SuppressWarnings("deprecation")
-public class SumOver extends UDAF{
+public class SumUDAF extends UDAF{
 	
 	public static class UDAFSumState {
 	    private long mCount;
@@ -63,7 +63,7 @@ public class SumOver extends UDAF{
 		
 	  }
 
-	  private SumOver() {
+	  private SumUDAF() {
 	    // prevent instantiation
 	  }
 		
