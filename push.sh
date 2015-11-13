@@ -14,7 +14,7 @@ usage () {
 	echo " 		It's a relative path and it start at /user/panda/" >&2
 	echo "optioni(s) :" >&2
 	echo "|         -t target folder to copie" >&2
-	echo "| 	-p <path> path to the hadoop filesystem" >&2
+	echo "| 	-p <path> path to the hadoop filesystem under /user/panda" >&2
 	echo "| 	-v verbose mode" >&2
 	echo "| 	-f force no confirmation" >&2
 	echo "|         -h print this awsome helper message" >&2
@@ -44,7 +44,7 @@ while getopts 't:p:vfh:' opt; do
 	esac
 done
 
-# ### CHECK IF THE USER IS HDFS
+# ### CHECK IF THE USER IS PANDA
 if [ `whoami` == "panda" ]; then
 	echo "Script start with 'panda' privileges."
 else
@@ -71,6 +71,7 @@ if [ -z $FORCE ];then
         	echo "Script exit with error code: 1."
         	exit 1
 	fi
+	
 fi
 	
 echo "Start acces to the hadoop-client."
