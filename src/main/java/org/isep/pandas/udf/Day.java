@@ -4,20 +4,17 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 import org.apache.hadoop.io.Text;
 import org.joda.time.DateTime;
 
+public class Day extends UDF {
 
-public class Week extends UDF{
-	
 	/**
-	 * Take a datetime format like: 2011-12-31 01:05:00 <br/>
-	 * Return {YEAR}_week-{week number} <br/>
-	 * Usage: SELECT getweek(dttm_utc) as week, SUM(value) FROM ... GROUP BY getweek(dttm_utc);
+	 * Take Text pam with Datetime format and
+	 * return Text with a Date Format.
 	 * @param dateTime
 	 * @return
 	 */
 	public Text evaluate(Text dateTime){
 		DateTime dtt = Bamboo.dateParse(dateTime.toString());
 		if (dtt == null ) return new Text("NULL");
-		String w = dtt.getWeekyear() + " / week:" + dtt.getWeekOfWeekyear();
-		return new Text(w);
+		return new Text(dtt.toString("yyyy-MM-dd"));
 	}
 }
